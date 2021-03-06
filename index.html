@@ -1,0 +1,120 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+      <header>
+      <h1 id="title">Chez Nous restaurant reservation</h1>
+        <p id="description">Welcome to our reservation form, please fill it in with your data to confirm reservation</p>
+      </header>
+      <main>
+        
+      <form id="survey-form" class="container">
+        <div class="row">
+          <div class="col-4">
+        <label for="name" id="name-label">Your name:</label>
+          </div>
+            <div class="col">
+        <input type="text" name="name" id="name" placeholder="Please type here your name..." required>
+              </div>
+          </div>
+        <div class="row">
+          <div class="col-4">
+          <label for="email" id="email-label">Your email:</label>
+            </div>
+          <div class="col">
+        <input type="email" name="email" id="email" placeholder="Please type here your email..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="number" id="number-label">How many people:</label>
+          </div>
+          <div class="col">
+        <input type="number" name="number" id="number" placeholder="How many people?" min="1" max="10" step="1">
+            </div>
+          </div>
+        <div class="row">
+          <div class="col-4">
+            <label for="dropdown" >
+          Special requirements</label>
+          </div>
+          <div class="col">
+          <select id="dropdown" name="special" >
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="eatall">I eat all!</option>
+          </select>
+            </div>
+            </div>
+        
+        <div class="row field">
+          <div class="col-4">
+        <fieldset>
+          
+          <legend>Payment method</legend>
+            </div>
+          <div class="col">
+ 
+          <input class="radio" type="radio" id="card" name="payment" value="card">
+        <label for="card">Credit card</label><br>
+     
+    
+      <input class="radio" type="radio" id="cash" name="payment" value="cash">
+        <label for="cash">Cash</label>
+        <br>
+          <input class="radio" type="radio" id="dish" name="payment" value="dish">
+        <label for="dish">I'll wash dishes after dinner</label>
+        </div>
+         </fieldset>
+          </div>
+
+        <div class="row field">
+          <div class="col-4">
+          <fieldset><legend>Extra service</legend>
+            </div>
+            <div class="col">
+          <input class="radio" type="checkbox" id="car" name="service" value="car">
+        <label for="car">Car parking</label><br>
+        
+      <input class="radio" type="checkbox" id="booth" name="service" value="booth">
+        <label for="booth">Photobooth</label>
+        </div>
+            <div class="col">
+          <input class="radio" type="checkbox" id="candle" name="service" value="candle">
+        <label for="candle">Candlelit dinner</label><br>
+        
+       <input class="radio" type="checkbox" id="wine" name="service" value="wine">
+        <label for="wine">Sommelier</label>
+           </div>
+         </fieldset>
+          </div>
+        <div class="row">
+        <div class="col-4">
+          <label for="other">Additional requests: </label>
+        </div>
+          <div class="col">
+        <textarea id="other" name="other" rows="5" cols="25">
+        </textarea>
+            </div>
+          </div>
+        <div class="row">
+        <input type="submit" value="Book my table!" id="submit" class="btn btn-light">
+          </div>
+       </form>
+         
+      </main>
+      <footer>
+      
+      </footer>
+      </body>
+</html>

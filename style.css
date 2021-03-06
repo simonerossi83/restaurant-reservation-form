@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+  }
+  
+  body {
+    background-image: url(https://images.unsplash.com/photo-1536392706976-e486e2ba97af?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80);
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+    
+  }
+  
+  fieldset {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  form {
+    width: 50vw;
+    margin: 20px auto;
+    
+  }
+  
+  label {
+    margin-bottom:10px;
+    margin-right: 30px;
+    
+  }
+  
+  input:not(.radio), select {
+    width:50%;
+  }
+  
+  input:invalid {
+    border: 2px dashed red;
+    background-color: lightPink;
+  }
+  
+  #submit {
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+  }
+       
+  #dropdown {
+    color: black;
+  }
+  
+  .field {
+    background-color: rgba(3,5,10,0.5);
+   margin: 30px 0;
+  }
